@@ -3,6 +3,13 @@ build/
 dist/
 *.spec
 
+# NSIS installer output
+YT-Downloader-Setup.exe
+
+# Binary assets (generate before building — see assets/README.txt)
+assets/*.ico
+assets/*.bmp
+
 # Python
 __pycache__/
 *.pyc
