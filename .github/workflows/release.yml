@@ -39,7 +39,9 @@ jobs:
         run: choco install nsis --no-progress -y
 
       - name: Build installer (NSIS)
-        run: makensis installer.nsi
+        run: |
+          $nsis = "C:\Program Files (x86)\NSIS\makensis.exe"
+          & $nsis installer.nsi
 
       - name: Upload portable exe artifact
         uses: actions/upload-artifact@v4
