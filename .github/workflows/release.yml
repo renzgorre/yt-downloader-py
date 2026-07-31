@@ -20,7 +20,10 @@ jobs:
           python-version: "3.11"
 
       - name: Install Python dependencies
-        run: pip install -r requirements.txt pyinstaller
+        run: pip install -r requirements.txt pyinstaller Pillow
+
+      - name: Generate assets (icon + installer banner)
+        run: python generate_assets.py
 
       - name: Build exe (PyInstaller)
         run: |
