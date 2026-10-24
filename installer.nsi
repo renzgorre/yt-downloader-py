@@ -41,7 +41,7 @@ SetCompressorDictSize 32
 !define MUI_FINISHPAGE_RUN       "$INSTDIR\${APP_EXE}"
 !define MUI_FINISHPAGE_RUN_TEXT  "Launch ${APP_NAME}"
 !define MUI_FINISHPAGE_LINK      "GitHub Repository"
-!define MUI_FINISHPAGE_LINK_LOCATION "https://github.com/ZoySoy-dot/yt-downloader-py"
+!define MUI_FINISHPAGE_LINK_LOCATION "https://github.com/renzgorre/yt-downloader-py"
 
 ; ── Pages (installer) ──────────────────────────────────────────────────────────
 
@@ -100,7 +100,7 @@ Section "Install" SecMain
     WriteRegStr   HKLM "${REG_KEY}" "UninstallString"      '"$INSTDIR\${APP_UNINSTALLER}"'
     WriteRegStr   HKLM "${REG_KEY}" "QuietUninstallString" '"$INSTDIR\${APP_UNINSTALLER}" /S'
     WriteRegStr   HKLM "${REG_KEY}" "DisplayIcon"          "$INSTDIR\${APP_EXE}"
-    WriteRegStr   HKLM "${REG_KEY}" "URLInfoAbout"         "https://github.com/ZoySoy-dot/yt-downloader-py"
+    WriteRegStr   HKLM "${REG_KEY}" "URLInfoAbout"         "https://github.com/renzgorre/yt-downloader-py"
     WriteRegDWORD HKLM "${REG_KEY}" "NoModify"             1
     WriteRegDWORD HKLM "${REG_KEY}" "NoRepair"             1
 
